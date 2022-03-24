@@ -1,9 +1,9 @@
 import './task-filter.css'
 
-const TaskFilter = () => {
+const TaskFilter = ({data}) => {
     return (
         <div className='task--filter'>
-            <span className='items--counter'>1 items left</span>
+            <span className='items--counter'>{data.length} items left</span>
             
             <div className='filter--btn--group'>
                 <button className='filter--btn btn--pressed'>

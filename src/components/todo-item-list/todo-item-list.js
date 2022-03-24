@@ -1,11 +1,15 @@
-import ToDoItem from '../todo-item/todo-item'
+import ToDoItem from '../todo-item/todo-item';
+import { useSelector } from 'react-redux';
+
 import './todo-item-list.css'
 
-const ToDoItemList = ({data, removeTodo, toggleTodo}) => {
+const ToDoItemList = () => {
+    const data = useSelector(state => state.data.data);
+
    return (
         <div className="todo--item--list">          
             {
-                data.map(item => <ToDoItem key={item.id} {...item} toggleTodo={toggleTodo} removeTodo={removeTodo}/> )
+                data.map(item => <ToDoItem key={item.id} {...item} /> )
             }
         </div>
    )
