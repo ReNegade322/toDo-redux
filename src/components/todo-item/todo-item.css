@@ -44,6 +44,7 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     outline: none; 
+    cursor: pointer;
 }
 
 .check--container{

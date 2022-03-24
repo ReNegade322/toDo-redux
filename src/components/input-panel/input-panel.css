@@ -22,7 +22,7 @@
     width: 45px;
     border: none;
     background: none;
-    /* background-image: url(./down--arrow.svg); */
+    background-image: url(./down--arrow.svg);
     background-repeat: no-repeat;
     background-position: center;
     outline: none;

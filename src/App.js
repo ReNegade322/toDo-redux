@@ -29,7 +29,7 @@ function App() {
       <div className='mane--container'>
         <ToDoInput text={text} handleInput={setText} handleSubmit={addTask}/>
         <ToDoItemList />  
-        {/* <TaskFilter /> */}
+        <TaskFilter />
       </div>
     </div>
   );
